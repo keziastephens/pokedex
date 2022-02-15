@@ -1,0 +1,28 @@
+html {
+  font-size: 65.5%; }
+
+nav {
+  height: 30vh;
+  width: 100vw;
+  background: #d3e6c3;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.logo {
+  height: 25vh; }
+
+.card {
+  margin: 2rem; }
+
+.card-header {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background: none;
+  border-top: 1px solid #d4d4d4;
+  text-transform: capitalize; }
+
+.card-text {
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: capitalize; }
+
+/*# sourceMappingURL=style.css.map */
