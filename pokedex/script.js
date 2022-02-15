@@ -24,12 +24,19 @@ $.ajax({
 
                 console.log(pokemon.sprites.front_default)
 
-                let i = 0;
-                for(i=0; i<pokemon.types.length; i++)
-                console.log(pokemon.types[i].type.name)
+
+
 
 
                 function cardDisplay(){
+                    let i = 0;
+                    for(i=0; i<pokemon.types.length; i++){
+                    console.log(pokemon.types[i].type.name)
+                    let typeName = pokemon.types[i].type.name;
+                    $("#cardContent").append(
+                        `${typeName}`
+                    )
+                    }                    
                     $("#cardContent").append(
                         `<div class="card" style="width: 18rem;">
                         <img src="${pokemon.sprites.front_default}" class="card-img-top" alt="...">
@@ -42,8 +49,11 @@ $.ajax({
                         </div>
                         </div>`
                     );
+
             
                 }
+
+
 
 
             }
